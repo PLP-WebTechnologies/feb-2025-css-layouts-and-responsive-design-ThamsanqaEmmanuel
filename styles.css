@@ -1,0 +1,301 @@
+.first-div h6 {
+    background-color: #c3c6c7; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header{
+    background-color: #ebeef0;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    top: 10px; 
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header .Logo img {
+    width: 100px; 
+    height: auto; 
+    flex: 0 0 auto; 
+    border-radius: 50px; 
+}
+
+.header .navbar {
+    flex: 1; 
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+.header .navbar ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    gap: 10px; 
+}
+
+.header .navbar ul li {
+    margin: 0;
+}
+
+.header .navbar ul li a {
+    text-decoration: none; 
+    color: #000; 
+    padding: 5px 10px; 
+    display: block; 
+}
+
+:active .header .navbar ul li a {
+    color: red; 
+}
+
+.header .navbar ul li a:hover {
+    color: lightgreen; 
+}
+h2{
+    text-align: center;
+}
+
+#btn{
+    background-color: #d3c39c; 
+    color: #000; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.section {
+    padding: 20px;
+    background-color: #f0f0f0; 
+    background-image: url('back.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 10px 0; 
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.content{
+    
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 10px; 
+    padding: 10px;
+    
+}
+
+
+.flex-container {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    font-size: 16px;
+    background-color: rgba(242, 240, 240, 0.703); 
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+.flex-container img  {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+
+
+.footer-content  {
+    background-color: #c3c6c7; 
+    display: -ms-inline-flexbox; 
+    min-height: 100px;
+    width: 100%; 
+    justify-content: space-between; 
+    text-align: center; 
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    padding: auto;
+}
+
+.footer-content ul, a{
+    list-style: none; 
+    text-decoration: none;   
+    padding: 0; 
+    margin: 0; 
+    color: #000; 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}
+.footer-content a:hover {
+    color:  rgb(27, 236, 27); 
+}
+.socials {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px;
+}
+
+.socials img {
+    width: 30px; 
+    height: auto; 
+    border-radius: 50%;
+}
+
+.footer-bottom {
+    background-color: #c3c6c7; 
+    padding: 10px;
+    text-align: center;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*  for small screens) */
+.header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header .navbar {
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .navbar ul {
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+.footer-content .footer-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(195, 198, 199, 0.5); 
+    min-height: 100px;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+
+.footer-content ul {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+/* TABLET: 600px and up */
+@media (min-width: 600px) {
+    .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .flex-container {
+        width: 45%; /* Two columns on tablets */
+        margin-bottom: 20px;
+    }
+
+    .header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+    }
+
+    .header .navbar {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .navbar ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+
+}
+
+/* DESKTOP: 900px and up */
+@media (min-width: 900px) {
+    .content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .flex-container {
+        width: 30%; 
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        align-items: center;
+    }
+
+    .header .navbar {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .header .navbar ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-content ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+}
+
+
